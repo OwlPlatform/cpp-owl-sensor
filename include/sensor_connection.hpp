@@ -32,6 +32,7 @@ class SensorConnection {
     ///Evalute to true if connected, false otherwise.
     explicit operator bool() const;
 
+    ///Sends the given sample. Throws a std::runtime_error upon failure.
     void send(SampleData& sd);
 };
 
