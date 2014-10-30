@@ -24,8 +24,8 @@ class SensorConnection {
     ClientSocket agg;
     std::string ip;
     int port;
-    bool reconnect();
   public:
+    bool reconnect();
     SensorConnection(std::string& ip, int port);
     ~SensorConnection();
 
